@@ -32,7 +32,7 @@ button:hover {
 
 #grid {
   display: grid;
-  grid-template-columns: repeat(4, 80px);
+  grid-template-columns: repeat(3, 80px); /* agora 3x3 */
   grid-gap: 10px;
   justify-content: center;
   margin-top: 20px;

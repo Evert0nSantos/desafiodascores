@@ -33,3 +33,10 @@
 ```bash
 git clone https://github.com/Evert0nSantos/desafiodascores.git
 cd desafiodascores
+
+## Creditos
+
+
+
+## Licença 
+Este projeto está licenciado sob a MIT License.

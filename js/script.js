@@ -63,7 +63,7 @@ function criarGrid() {
   gridElement.innerHTML = "";
   coresAtuaisNoGrid = [];
 
-  for (let i = 0; i < 16; i++) {
+  for (let i = 0; i < 9; i++) { // Agora 3x3
     const cor = cores[Math.floor(Math.random() * cores.length)];
     coresAtuaisNoGrid.push(cor);
     const div = document.createElement("div");
