@@ -57,4 +57,26 @@ button:hover {
 #ranking ol {
   list-style-position: inside;
   padding-left: 0;
+} 
+
+#mensagem {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  height: 30px;
+}
+
+#mensagem.show {
+  opacity: 1;
+}
+
+#mensagem.acertou {
+  color: green;
+}
+
+#mensagem.errou {
+  color: red;
 }

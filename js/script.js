@@ -14,6 +14,7 @@ const tempoElement = document.getElementById("tempo");
 const nomeJogadorInput = document.getElementById("nomeJogador");
 const nomeFinal = document.getElementById("nomeFinal");
 const pontuacaoFinal = document.getElementById("pontuacaoFinal");
+const mensagemEl = document.getElementById("mensagem");
 
 let corAlvo = {};
 let pontuacao = 0;
@@ -80,13 +81,32 @@ function escolherNovaCor() {
   corAlvoElement.textContent = corAlvo.nome;
 }
 
+function mostrarMensagem(texto) {
+  mensagemEl.textContent = texto;
+
+  if (texto === 'Acertou!') {
+    mensagemEl.classList.add('acertou');
+    mensagemEl.classList.remove('errou');
+  } else {
+    mensagemEl.classList.add('errou');
+    mensagemEl.classList.remove('acertou');
+  }
+
+  mensagemEl.classList.add('show');
+  setTimeout(() => {
+    mensagemEl.classList.remove('show');
+  }, 1000);
+}
+
 function verificarClique(div) {
   const corClicada = div.dataset.cor;
   if (corClicada === corAlvo.nome) {
     pontuacao += 10;
+    mostrarMensagem('Acertou!');
   } else {
     pontuacao -= 5;
     if (pontuacao < 0) pontuacao = 0;
+    mostrarMensagem('Errou!');
   }
   atualizarPontuacao();
   criarGrid();
