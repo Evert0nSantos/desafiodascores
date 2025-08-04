@@ -30,13 +30,15 @@
 
 # Como jogar o jogo localmente
 
-```bash
 git clone https://github.com/Evert0nSantos/desafiodascores.git
 cd desafiodascores
 
 ## Creditos
-
-
+- Projeto desenvolvido como atividade da disciplina de desevolvimento web 1.
+- https://www.w3schools.com/
+- https://developer.mozilla.org/pt-BR/
+- Inspiração na ideia do "Desafio das Cores", adaptada com regras próprias.
+- Auxílio do ChatGPT para estruturação e otimização do código.
 
 ## Licença 
 Este projeto está licenciado sob a MIT License.
